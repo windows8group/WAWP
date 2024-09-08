@@ -22,6 +22,16 @@ namespace WAWP
             //BuildLocalizedApplicationBar();
         }
 
+        private void Panorama_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBox_Copy_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{

@@ -40,15 +40,25 @@
          -->
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <TextBlock Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
-        </StackPanel>
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28"/>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
-        </Grid>
+        <phone:Panorama HorizontalAlignment="Left" Height="768" Margin="12,0,0,0" Title="WAWP" VerticalAlignment="Top" Width="456" Loaded="Panorama_Loaded" Grid.RowSpan="2">
+            <phone:PanoramaItem CacheMode="{x:Null}" Header="chats">
+                <phone:PanoramaItem.RenderTransform>
+                    <TranslateTransform/>
+                </phone:PanoramaItem.RenderTransform>
+                <Grid/>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem CacheMode="{x:Null}" Header="calls">
+                <phone:PanoramaItem.RenderTransform>
+                    <TranslateTransform/>
+                </phone:PanoramaItem.RenderTransform>
+                <Grid/>
+            </phone:PanoramaItem>
+            <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="72" Margin="-812,134,0,0" TextWrapping="Wrap" Text="ttestt1" VerticalAlignment="Top" Width="387" RenderTransformOrigin="0.49,3.391"/>
+            <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Margin="-814,133,0,332" TextWrapping="Wrap" Text="ttestt2" Width="381" RenderTransformOrigin="0.915,0.504" TextChanged="textBox_Copy_TextChanged"/>
+        </phone:Panorama>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are
             aligned on common boundaries.  The image has a top margin of -32px to
