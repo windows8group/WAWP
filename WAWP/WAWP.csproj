@@ -93,6 +93,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Assets\Pages\BroadcastsListsPage.xaml.cs">
+      <DependentUpon>BroadcastsListsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\Pages\Cmd.xaml.cs">
+      <DependentUpon>Cmd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\Pages\PushNotificationTest.xaml.cs">
+      <DependentUpon>PushNotificationTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\Pages\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ChatItem.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
@@ -104,12 +116,33 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\CMD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CMD.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Assets\Pages\BroadcastsListsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\Pages\Cmd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\Pages\PushNotificationTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\Pages\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -125,6 +158,7 @@
     <Content Include="Assets\AlignmentGrid.png" />
     <Content Include="Assets\AppBar1\new.png" />
     <Content Include="Assets\AppBar2\basecircle.png" />
+    <Content Include="Assets\AppBar2\newgroup.png" />
     <Content Include="Assets\AppBar\feature.search.png" />
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -149,6 +183,10 @@
     <EmbeddedResource Include="Resources\AppResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CMD.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CMD.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />

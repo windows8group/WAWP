@@ -7,7 +7,6 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -102,12 +101,13 @@
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar>
             <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="broadcast lists"/>
-                <shell:ApplicationBarMenuItem Text="settings"/>
+                <shell:ApplicationBarMenuItem Text="broadcast lists" Click="broadcasts"/>
+                <shell:ApplicationBarMenuItem Text="settings" Click="settings"/>
+                <shell:ApplicationBarMenuItem Text="(beta) test command prompt" Click="bummer_cmd"/>
             </shell:ApplicationBar.MenuItems>
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.search.png" Text="search"/>
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar1/new.png" Text="new chat"/>
-            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar2/basecircle.png" Text="new group"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar2/newgroup.png" Text="new group"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 
