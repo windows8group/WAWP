@@ -31,6 +31,21 @@ namespace WAWP
             ChatsList.ItemsSource = chats;
         }
 
+        private void BroadcastsMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Pages/BroadcastListsPage.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void SettingsMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Pages/SettingsPage.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void CMDMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Pages/CMDPage.xaml", UriKind.RelativeOrAbsolute));
+        }
+
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{
@@ -46,22 +61,6 @@ namespace WAWP
         //    ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
         //    ApplicationBar.MenuItems.Add(appBarMenuItem);
         //}
-
-        //by c4l3b3 from here and on
-        private void broadcasts(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("Pages/BroadcastsListsPage.xaml", UriKind.Absolute));
-        }
-        //do the same with the settings 
-        private void settings(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("Pages/SettingsPage.xaml", UriKind.Absolute));
-        }
-        //now, making sure /Resources/CMD.resx and /Pages/Cmd.xaml is there, do the same
-        private void bummer_cmd(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("Pages/Cmd.xaml", UriKind.Absolute));
-        }
 
     }
 }

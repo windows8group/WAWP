@@ -93,16 +93,16 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Assets\Pages\BroadcastsListsPage.xaml.cs">
-      <DependentUpon>BroadcastsListsPage.xaml</DependentUpon>
+    <Compile Include="Pages\BroadcastListsPage.xaml.cs">
+      <DependentUpon>BroadcastListsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Assets\Pages\Cmd.xaml.cs">
-      <DependentUpon>Cmd.xaml</DependentUpon>
+    <Compile Include="Pages\CMDPage.xaml.cs">
+      <DependentUpon>CMDPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Assets\Pages\PushNotificationTest.xaml.cs">
+    <Compile Include="Pages\PushNotificationTest.xaml.cs">
       <DependentUpon>PushNotificationTest.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Assets\Pages\SettingsPage.xaml.cs">
+    <Compile Include="Pages\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ChatItem.cs" />
@@ -127,19 +127,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="Assets\Pages\BroadcastsListsPage.xaml">
+    <Page Include="Pages\BroadcastListsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Assets\Pages\Cmd.xaml">
+    <Page Include="Pages\CMDPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Assets\Pages\PushNotificationTest.xaml">
+    <Page Include="Pages\PushNotificationTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Assets\Pages\SettingsPage.xaml">
+    <Page Include="Pages\SettingsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

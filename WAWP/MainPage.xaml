@@ -101,10 +101,11 @@
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar>
             <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="broadcast lists" Click="broadcasts"/>
-                <shell:ApplicationBarMenuItem Text="settings" Click="settings"/>
-                <shell:ApplicationBarMenuItem Text="(beta) test command prompt" Click="bummer_cmd"/>
+                <shell:ApplicationBarMenuItem x:Name="BroadcastsMenuItem" Text="broadcast lists" Click="BroadcastsMenuItem_Click"/>
+                <shell:ApplicationBarMenuItem x:Name="SettingsMenuItem" Text="settings" Click="SettingsMenuItem_Click"/>
+                <shell:ApplicationBarMenuItem x:Name="CMDMenuItem" Text="(beta) test command prompt" IsEnabled="True" Click="CMDMenuItem_Click"/>
             </shell:ApplicationBar.MenuItems>
+
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.search.png" Text="search"/>
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar1/new.png" Text="new chat"/>
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar2/newgroup.png" Text="new group"/>
