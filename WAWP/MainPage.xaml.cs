@@ -27,23 +27,8 @@ namespace WAWP
             chats.Add(new ChatItem() { Name = "Kierownik223", ImageUri = "https://marmak.net.pl/images/Kierownik223.png", LastMessage = "UI Testing!" });
             chats.Add(new ChatItem() { Name = "Olek47", ImageUri = "https://marmak.net.pl/images/Olek47.png", LastMessage = "UI Testing 2!" });
             chats.Add(new ChatItem() { Name = "Maksym", ImageUri = "https://marmak.net.pl/images/Maksym.png", LastMessage = "Siema" });
-
+            
             ChatsList.ItemsSource = chats;
-        }
-
-        private void BroadcastsMenuItem_Click(object sender, EventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/Pages/BroadcastListsPage.xaml", UriKind.RelativeOrAbsolute));
-        }
-
-        private void SettingsMenuItem_Click(object sender, EventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/Pages/SettingsPage.xaml", UriKind.RelativeOrAbsolute));
-        }
-
-        private void CMDMenuItem_Click(object sender, EventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/Pages/CMDPage.xaml", UriKind.RelativeOrAbsolute));
         }
 
         // Sample code for building a localized ApplicationBar
@@ -62,5 +47,43 @@ namespace WAWP
         //    ApplicationBar.MenuItems.Add(appBarMenuItem);
         //}
 
+        private void broadcasts(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                NavigationService.Navigate(new Uri("Pages/BroadcastsListsPage.xaml", UriKind.Relative));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to navigate to Broadcasts: " + ex.Message);
+            }
+        }
+
+        private void settings(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                NavigationService.Navigate(new Uri("Pages/SettingsPage.xaml", UriKind.Relative));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to navigate to Settings: " + ex.Message);
+            }
+        }
+
+        private void archive(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                NavigationService.Navigate(new Uri("Pages/ArchivedChatsPage.xaml", UriKind.Relative));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to navigate to Archived Chats: " + ex.Message);
+            }
+        }
+
+
+       
     }
 }

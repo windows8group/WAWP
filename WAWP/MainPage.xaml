@@ -23,7 +23,7 @@
                         <TextBlock Text="WAWP"/>
                         <StackPanel Orientation="Horizontal" Margin="10,0,0,0" >
                             <TextBlock Text="&#xe200;" FontFamily="Segoe UI Symbol" Foreground="{StaticResource PhoneAccentBrush}" Padding="0" FontSize="16" VerticalAlignment="Center"/>
-                            <TextBlock FontFamily="Segoe WP" Text="3" Foreground="{StaticResource PhoneAccentBrush}" Margin="5,0,0,0"/>
+                            <TextBlock FontFamily="Segoe WP" Text="3" Foreground="{StaticResource PhoneAccentBrush}" Margin="5,0,0,0" Name="Messages"/>
                         </StackPanel>
                     </StackPanel>
                 </DataTemplate>
@@ -101,11 +101,10 @@
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar>
             <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem x:Name="BroadcastsMenuItem" Text="broadcast lists" Click="BroadcastsMenuItem_Click"/>
-                <shell:ApplicationBarMenuItem x:Name="SettingsMenuItem" Text="settings" Click="SettingsMenuItem_Click"/>
-                <shell:ApplicationBarMenuItem x:Name="CMDMenuItem" Text="(beta) test command prompt" IsEnabled="True" Click="CMDMenuItem_Click"/>
+                <shell:ApplicationBarMenuItem Text="broadcast lists" Click="broadcasts"/>
+                <shell:ApplicationBarMenuItem Text="archived chats" Click="archive"/>
+                <shell:ApplicationBarMenuItem Text="settings" Click="settings"/>
             </shell:ApplicationBar.MenuItems>
-
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.search.png" Text="search"/>
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar1/new.png" Text="new chat"/>
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar2/newgroup.png" Text="new group"/>

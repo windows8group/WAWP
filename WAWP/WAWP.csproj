@@ -93,14 +93,11 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\BroadcastListsPage.xaml.cs">
-      <DependentUpon>BroadcastListsPage.xaml</DependentUpon>
+    <Compile Include="Pages\ArchivedChatsPage.xaml.cs">
+      <DependentUpon>ArchivedChatsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\CMDPage.xaml.cs">
-      <DependentUpon>CMDPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\PushNotificationTest.xaml.cs">
-      <DependentUpon>PushNotificationTest.xaml</DependentUpon>
+    <Compile Include="Pages\BroadcastsListsPage.xaml.cs">
+      <DependentUpon>BroadcastsListsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
@@ -116,26 +113,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\CMD.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CMD.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="Pages\BroadcastListsPage.xaml">
+    <Page Include="Pages\ArchivedChatsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\CMDPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\PushNotificationTest.xaml">
+    <Page Include="Pages\BroadcastsListsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -183,10 +171,6 @@
     <EmbeddedResource Include="Resources\AppResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\CMD.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>CMD.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
