@@ -10,4 +10,4 @@ Platforms: *WP8, WP8.1*,
 
 Screenshots:
 
-![ScreenShot](Screenshot1.png)
+![ScreenShot](Screenshot1.png) ![ScreenShot](Screenshot2.png) ![ScreenShot](Screenshot3.png)
