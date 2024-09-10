@@ -21,7 +21,7 @@ namespace WAWP.Assets.Pages
         //lol im so funy rn
         private void yaymap(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("YAY MAP!", "WAMP Map Test", MessageBoxButton.OK);
+            MessageBox.Show("YAY MAP!", "WAWP Map Test", MessageBoxButton.OK);
         }
     }
 }
