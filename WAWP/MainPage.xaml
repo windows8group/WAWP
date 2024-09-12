@@ -132,5 +132,5 @@
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar2/newgroup.png" Text="new group"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
-
+<!--whatsapp logo Assets/ApplicationIcon.png-->
 </phone:PhoneApplicationPage>
