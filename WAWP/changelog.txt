@@ -1,8 +1,0 @@
-WAWP 0.1.1 Beta:
-Created command prompt for beta testers commands for easier access
-Created Push Notification Command
-Created settings redirector
-Created Broadcasts Lists redirector
-Created variable !MESSAGES!
-Fixed some bugs
-Removed map easter egg
