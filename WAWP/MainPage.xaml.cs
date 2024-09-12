@@ -27,7 +27,7 @@ namespace WAWP
             chats.Add(new ChatItem() { Name = "Kierownik223", ImageUri = "https://marmak.net.pl/images/Kierownik223.png", LastMessage = "UI Testing!" });
             chats.Add(new ChatItem() { Name = "Olek47", ImageUri = "https://marmak.net.pl/images/Olek47.png", LastMessage = "UI Testing 2!" });
             chats.Add(new ChatItem() { Name = "Maksym", ImageUri = "https://marmak.net.pl/images/Maksym.png", LastMessage = "Siema" });
-            
+
             ChatsList.ItemsSource = chats;
         }
 
@@ -47,43 +47,19 @@ namespace WAWP
         //    ApplicationBar.MenuItems.Add(appBarMenuItem);
         //}
 
-        private void broadcasts(object sender, RoutedEventArgs e)
+        private void ArchiveMenuItem_Click(object sender, EventArgs e)
         {
-            try
-            {
-                NavigationService.Navigate(new Uri("Pages/BroadcastsListsPage.xaml", UriKind.Relative));
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Failed to navigate to Broadcasts: " + ex.Message);
-            }
+            NavigationService.Navigate(new Uri("/Pages/ArchivedChatsPage.xaml", UriKind.RelativeOrAbsolute));
         }
 
-        private void settings(object sender, RoutedEventArgs e)
+        private void BroadcastsMenuItem_Click(object sender, EventArgs e)
         {
-            try
-            {
-                NavigationService.Navigate(new Uri("Pages/SettingsPage.xaml", UriKind.Relative));
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Failed to navigate to Settings: " + ex.Message);
-            }
+            NavigationService.Navigate(new Uri("/Pages/BroadcastsListsPage.xaml", UriKind.RelativeOrAbsolute));
         }
 
-        private void archive(object sender, RoutedEventArgs e)
+        private void SettingsMenuItem_Click(object sender, EventArgs e)
         {
-            try
-            {
-                NavigationService.Navigate(new Uri("Pages/ArchivedChatsPage.xaml", UriKind.Relative));
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Failed to navigate to Archived Chats: " + ex.Message);
-            }
+            NavigationService.Navigate(new Uri("/Pages/SettingsPage.xaml", UriKind.RelativeOrAbsolute));
         }
-
-
-       
     }
 }

@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage
-    x:Class="WAWP.Assets.Pages.SettingsPage"
+    x:Class="WAWP.Pages.AboutPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -23,13 +23,17 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="WAWP" Style="{StaticResource PhoneTextNormalStyle}" FontFamily="Segoe WP Semibold" FontSize="22.667"/>
-            <TextBlock Text="settings" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48"/>
+            <TextBlock Margin="9,-7,-39,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48" Text="about"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <phone:LongListSelector HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
-        </Grid>
+        <StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="24">
+                <Bold>W</Bold>hats<Bold>A</Bold>pp <Bold>W</Bold>indows <Bold>P</Bold>hone
+            </TextBlock>
+            <TextBlock Text="App made by:" Margin="0,10,0,0" FontSize="24" HorizontalAlignment="Center"/>
+            
+        </StackPanel>
     </Grid>
 
 </phone:PhoneApplicationPage>

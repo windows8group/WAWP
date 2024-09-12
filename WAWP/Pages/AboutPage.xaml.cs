@@ -8,18 +8,13 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 
-namespace WAWP.Assets.Pages
+namespace WAWP.Pages
 {
-    public partial class BroadcastsListsPage : PhoneApplicationPage
+    public partial class AboutPage : PhoneApplicationPage
     {
-        public BroadcastsListsPage()
+        public AboutPage()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("YAY MAP!", "WAWP Button Test", MessageBoxButton.OK);
         }
     }
 }
