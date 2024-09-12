@@ -4,9 +4,9 @@ Well, we got so many services for Windows Phone again, Discord, Youtube, what ab
 With WAWP, you can recover your moments on WhatsApp for Windows Phone, once again! And use your Windows Phone as daily driver!
 
 Stats:
-Version: *0.1*,
+Version: *0.0.2*,
 
-Platforms: *WP8, WP8.1*,
+Platforms: *WP8, WP8.1, W10M*.
 
 Screenshots:
 
