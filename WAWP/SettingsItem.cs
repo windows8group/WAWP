@@ -8,7 +8,8 @@ namespace WAWP
 {
     class SettingsItem
     {
-        public string name { get; set; }
-        public string desc { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public Uri PageUri { get; set; }
     }
 }
