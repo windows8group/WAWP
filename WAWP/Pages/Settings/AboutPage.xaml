@@ -54,7 +54,50 @@
                 <Bold>W</Bold>hats<Bold>A</Bold>pp <Bold>W</Bold>indows <Bold>P</Bold>hone
             </TextBlock>
             <TextBlock Text="App made by:" Margin="0,10,0,0" FontSize="24" HorizontalAlignment="Center"/>
-            
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" Source="/Assets/Profiles/tim.jpg" Stretch="UniformToFill" Width="75" Height="75"/>
+                <StackPanel Grid.Column="1" Margin="10,0,0,0">
+                    <TextBlock Text="tim" FontSize="36" TextDecorations="Underline" Foreground="{StaticResource PhoneAccentBrush}"/>
+                    <TextBlock Text="Project management"/>
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" Source="/Assets/Profiles/Kierownik223.png" Stretch="UniformToFill" Width="75" Height="75"/>
+                <StackPanel Grid.Column="1" Margin="10,0,0,0">
+                    <TextBlock Text="Kierownik223" FontSize="36" Foreground="{StaticResource PhoneAccentBrush}" TextDecorations="Underline"/>
+                    <TextBlock Text="Client app developement"/>
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" Source="/Assets/Profiles/PickaxeInABox.png" Stretch="UniformToFill" Width="75" Height="75"/>
+                <StackPanel Grid.Column="1" Margin="10,0,0,0">
+                    <TextBlock Text="PickaxeInABox" FontSize="36" Foreground="{StaticResource PhoneAccentBrush}" TextDecorations="Underline"/>
+                    <TextBlock Text="Client app developement"/>
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" Source="/Assets/Profiles/Bebrito.png" Stretch="UniformToFill" Width="75" Height="75"/>
+                <StackPanel Grid.Column="1" Margin="10,0,0,0">
+                    <TextBlock x:Name="Olek" Text="Bebrito" FontSize="36" Foreground="{StaticResource PhoneAccentBrush}" TextDecorations="Underline"/>
+                    <TextBlock Text="WAWP server developer"/>
+                </StackPanel>
+            </Grid>
         </StackPanel>
     </Grid>
 
