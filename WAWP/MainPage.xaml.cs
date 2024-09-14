@@ -61,5 +61,11 @@ namespace WAWP
         {
             NavigationService.Navigate(new Uri("/Pages/SettingsPage.xaml", UriKind.RelativeOrAbsolute));
         }
+
+        private void ChatsList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ChatItem myItem = ((LongListSelector)sender).SelectedItem as ChatItem;
+            NavigationService.Navigate(new Uri("/Pages/ChatPage.xaml?name=" + myItem.Name, UriKind.RelativeOrAbsolute));
+        }
     }
 }
