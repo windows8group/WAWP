@@ -44,6 +44,11 @@ namespace WAWP.Assets.Pages
             SettingsItem selectedItem = SettingsList.SelectedItem as SettingsItem;
 
             // Navigate to the next page using the 'dest' property
+            if (selectedItem.Destination == "LockScreenPage")
+                Windows.System.Launcher.LaunchUriAsync(new System.Uri("ms-settings-lock:"));
+            else if (selectedItem.Destination == "RotationPage")
+                Windows.System.Launcher.LaunchUriAsync(new System.Uri("ms-settings-screenrotation:"));
+            else
             NavigationService.Navigate(new Uri("/Pages/Settings/" + selectedItem.Destination + ".xaml", UriKind.Relative));
 
             // Reset selected item to null

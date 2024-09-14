@@ -50,7 +50,7 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="Should send you to the Settings app. Not implemented" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="Should send you to the Settings app. Not used as a page" VerticalAlignment="Top"/>
         </Grid>
     </Grid>
 

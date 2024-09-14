@@ -94,7 +94,7 @@
                 </Grid.ColumnDefinitions>
                 <Image Grid.Column="0" Source="/Assets/Profiles/Bebrito.png" Stretch="UniformToFill" Width="75" Height="75"/>
                 <StackPanel Grid.Column="1" Margin="10,0,0,0">
-                    <TextBlock x:Name="Olek" Text="Bebrito" FontSize="36" Foreground="{StaticResource PhoneAccentBrush}" TextDecorations="Underline"/>
+                    <TextBlock x:Name="Olek" Text="IarChep" FontSize="36" Foreground="{StaticResource PhoneAccentBrush}" TextDecorations="Underline"/>
                     <TextBlock Text="WAWP server developer"/>
                 </StackPanel>
             </Grid>
