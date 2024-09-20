@@ -13,7 +13,7 @@
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
     shell:SystemTray.IsVisible="True">
-    
+
     <toolkit:TransitionService.NavigationInTransition>
         <toolkit:NavigationInTransition>
             <toolkit:NavigationInTransition.Backward>
@@ -50,9 +50,30 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="Not Implemented yet" VerticalAlignment="Top"/>
-
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0">
+            <Grid Height="150" Width="150" 
+                  Margin="12,0,0,0" 
+                  VerticalAlignment="Top" HorizontalAlignment="Left">
+                <Image Source="/Assets/defaultuser.png"
+                       Width="150" Height="150" 
+                       HorizontalAlignment="Left"/>
+                <Polygon Points="150,80 150,150 80,150" 
+                         Fill="black"
+                         Opacity="0.5"/>
+                <Image Source="/Assets/icon_camera.png" 
+                       VerticalAlignment="Bottom"
+                       HorizontalAlignment="right"
+                       Height="50"
+                       Margin="0,0,-3,-3"/>
+            </Grid>
+            <Grid Height="106" VerticalAlignment="Top" HorizontalAlignment="Right" Width="290" Margin="0,22,0,0">
+                <TextBlock Margin="12,0,0,0" Text="profile_name" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Segoe WP Light" FontSize="30"/>
+                <Button VerticalAlignment="Bottom" x:Name="ChangeName" Content="Change your name"/>
+            </Grid>
+            <StackPanel Height="470" VerticalAlignment="Top" Margin="0,165,0,0">
+                <TextBlock Text="status" HorizontalAlignment="Left" Margin="15,0,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="32"/>
+                <toolkit:PhoneTextBox Hint="What's your status today?"/>
+            </StackPanel>
         </Grid>
     </Grid>
 
