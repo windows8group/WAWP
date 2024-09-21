@@ -88,11 +88,11 @@ namespace WAWP.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to add.
+        ///   Looks up a localized string similar to privacy, delete account.
         /// </summary>
-        public static string AddButton {
+        public static string Account_Des {
             get {
-                return ResourceManager.GetString("AddButton", resourceCulture);
+                return ResourceManager.GetString("Account_Des", resourceCulture);
             }
         }
         
@@ -106,11 +106,29 @@ namespace WAWP.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to auto-download, wallpaper, backup and more.
+        /// </summary>
+        public static string Chat_Settings_Des {
+            get {
+                return ResourceManager.GetString("Chat_Settings_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to connectivity.
         /// </summary>
         public static string Connectivity {
             get {
                 return ResourceManager.GetString("Connectivity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to change connectivity type.
+        /// </summary>
+        public static string Connectivity_Des {
+            get {
+                return ResourceManager.GetString("Connectivity_Des", resourceCulture);
             }
         }
         
@@ -124,11 +142,47 @@ namespace WAWP.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to invite a friend, block someone.
+        /// </summary>
+        public static string Contacts_Des {
+            get {
+                return ResourceManager.GetString("Contacts_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy.
+        /// </summary>
+        public static string Copy {
+            get {
+                return ResourceManager.GetString("Copy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        public static string Delete {
+            get {
+                return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to lock screen.
         /// </summary>
         public static string Lock_Screen {
             get {
                 return ResourceManager.GetString("Lock_Screen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to add WAWP to your lock screen.
+        /// </summary>
+        public static string Lock_Screen_Des {
+            get {
+                return ResourceManager.GetString("Lock_Screen_Des", resourceCulture);
             }
         }
         
@@ -142,11 +196,29 @@ namespace WAWP.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to change notification sounds.
+        /// </summary>
+        public static string Notif_Sounds_Des {
+            get {
+                return ResourceManager.GetString("Notif_Sounds_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to profile.
         /// </summary>
         public static string Profile {
             get {
                 return ResourceManager.GetString("Profile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to name, set an avatar, status.
+        /// </summary>
+        public static string Profile_Des {
+            get {
+                return ResourceManager.GetString("Profile_Des", resourceCulture);
             }
         }
         
@@ -174,6 +246,33 @@ namespace WAWP.Resources {
         public static string Rotation {
             get {
                 return ResourceManager.GetString("Rotation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to auto-rotate or block rotation.
+        /// </summary>
+        public static string Rotation_Des {
+            get {
+                return ResourceManager.GetString("Rotation_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to settings.
+        /// </summary>
+        public static string Settings {
+            get {
+                return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Share.
+        /// </summary>
+        public static string Share {
+            get {
+                return ResourceManager.GetString("Share", resourceCulture);
             }
         }
     }

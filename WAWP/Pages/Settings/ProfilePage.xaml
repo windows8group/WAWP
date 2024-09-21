@@ -7,6 +7,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:local="clr-namespace:WAWP"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -54,22 +55,38 @@
             <Grid Height="150" Width="150" 
                   Margin="12,0,0,0" 
                   VerticalAlignment="Top" HorizontalAlignment="Left">
+                
                 <Image Source="/Assets/defaultuser.png"
                        Width="150" Height="150" 
                        HorizontalAlignment="Left"/>
+                
                 <Polygon Points="150,80 150,150 80,150" 
                          Fill="black"
                          Opacity="0.5"/>
+                
                 <Image Source="/Assets/icon_camera.png" 
                        VerticalAlignment="Bottom"
                        HorizontalAlignment="right"
                        Height="50"
                        Margin="0,0,-3,-3"/>
             </Grid>
-            <Grid Height="106" VerticalAlignment="Top" HorizontalAlignment="Right" Width="290" Margin="0,22,0,0">
-                <TextBlock Margin="12,0,0,0" Text="profile_name" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Segoe WP Light" FontSize="30"/>
-                <Button VerticalAlignment="Bottom" x:Name="ChangeName" Content="Change your name"/>
+            
+            <Grid VerticalAlignment="Top" HorizontalAlignment="Right" Width="290">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <toolkit:PhoneTextBox Background="Transparent" Hint="Profile name" Grid.Row="0"
+                                      VerticalAlignment="Top" HorizontalAlignment="Left"
+                                      Width="290" BorderThickness="0" Text="Profile name"
+                                      Foreground="White"
+                                      x:Name="profileBox" LostFocus="profileBox_LostFocus"/>
+
+                <Button VerticalAlignment="Bottom" x:Name="ChangeName" Content="Change your name"
+                        Grid.Row="1" Click="ChangeName_Click"/>
             </Grid>
+            
             <StackPanel Height="470" VerticalAlignment="Top" Margin="0,165,0,0">
                 <TextBlock Text="status" HorizontalAlignment="Left" Margin="15,0,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="32"/>
                 <toolkit:PhoneTextBox Hint="What's your status today?"/>

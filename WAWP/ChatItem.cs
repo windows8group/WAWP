@@ -15,6 +15,7 @@ namespace WAWP
         public string ImageUri { get; set; }
         public string Name { get; set; }
         public string LastMessage { get; set; }
+        public bool isRead { get; set; }
     }
 
     /// <summary>

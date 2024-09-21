@@ -16,5 +16,16 @@ namespace WAWP.Pages.Settings
         {
             InitializeComponent();
         }
+
+        private void ChangeName_Click(object sender, RoutedEventArgs e)
+        {
+            profileBox.BorderThickness = new Thickness(3.0, 3.0, 3.0, 3.0); // checked with XAML from Microsoft
+            profileBox.Focus();
+        }
+
+        private void profileBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            profileBox.BorderThickness = new Thickness(0.0, 0.0, 0.0, 0.0);
+        }
     }
 }
