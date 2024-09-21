@@ -45,20 +45,17 @@
 
         <phone:Pivot>
             <phone:Pivot.Title>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="WAWP"/>
-                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0" >
-                            <TextBlock Text="&#xe200;" FontFamily="Segoe UI Symbol" Foreground="{StaticResource PhoneAccentBrush}" Padding="0" FontSize="16" VerticalAlignment="Center"/>
-                            <TextBlock FontFamily="Segoe WP" Foreground="{StaticResource PhoneAccentBrush}" Margin="5,0,0,0" x:Name="UnreadCount"/>
-                        </StackPanel>
-                    </StackPanel>
                 
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="WAWP"/>
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0" >
+                        <TextBlock Text="&#xe200;" FontFamily="Segoe UI Symbol" Foreground="{StaticResource PhoneAccentBrush}" Padding="0" FontSize="16" VerticalAlignment="Center"/>
+                        <TextBlock FontFamily="Segoe WP" Foreground="{StaticResource PhoneAccentBrush}" Margin="5,0,0,0" x:Name="UnreadCount"/>
+                    </StackPanel>
+                </StackPanel>
+
             </phone:Pivot.Title>
-            <!--<phone:Pivot.TitleTemplate>
-                <DataTemplate>
-                </DataTemplate>
-            </phone:Pivot.TitleTemplate>-->
-            
+
             <phone:Pivot.HeaderTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
