@@ -117,43 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AddButton" xml:space="preserve">
-    <value>add</value>
-  </data>
-  <data name="About" xml:space="preserve">
-    <value>about</value>
-  </data>
-  <data name="About_Des" xml:space="preserve">
-    <value>meet the team</value>
-  </data>
-  <data name="Account" xml:space="preserve">
-    <value>account</value>
-  </data>
-  <data name="Chat_Settings" xml:space="preserve">
-    <value>chat settings</value>
-  </data>
-  <data name="Connectivity" xml:space="preserve">
-    <value>connectivity</value>
-  </data>
-  <data name="Contacts" xml:space="preserve">
-    <value>contacts</value>
-  </data>
-  <data name="Lock_Screen" xml:space="preserve">
-    <value>lock screen</value>
-  </data>
-  <data name="Notif_Sounds" xml:space="preserve">
-    <value>notification sounds</value>
-  </data>
-  <data name="Profile" xml:space="preserve">
-    <value>profile</value>
-  </data>
-  <data name="Rotation" xml:space="preserve">
-    <value>rotation</value>
-  </data>
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
   </data>
-  <data name="ResourceLanguage" xml:space="preserve">
-    <value>en-US</value>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>WAWP</value>
+  </data>
+  <data name="AppBarButtonText" xml:space="preserve">
+    <value>add</value>
+  </data>
+  <data name="AppBarMenuItemText" xml:space="preserve">
+    <value>Menu Item</value>
   </data>
 </root>
