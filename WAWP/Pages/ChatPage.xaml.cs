@@ -9,6 +9,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using WAWP.Resources;
+using System.Windows.Media.Animation;
 
 namespace WAWP.Pages
 {
@@ -43,12 +44,14 @@ namespace WAWP.Pages
         {
             PaddingRectangle.Visibility = Visibility.Visible;
             PaddingRectangleShowAnim.Begin();
+            messageBoxExpandAnim.Begin();
         }
 
         private void TextBox_LostFocus(object sender, RoutedEventArgs e)
         {
             PaddingRectangle.Visibility = Visibility.Collapsed;
             PaddingRectangleHideAnim.Begin();
+            messageBoxRestoreAnim.Begin();
         }
 
         private void SendMenuItem_Click(object sender, EventArgs e)
@@ -64,6 +67,7 @@ namespace WAWP.Pages
                     }
                 );
                 ConversationScrollViewer.Focus();
+                messageBox.Text = "";
             }
         }
 
@@ -77,6 +81,7 @@ namespace WAWP.Pages
             {
                 chatTitle.Text = userName;
             }
+
         }
 
         private void messageBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -130,6 +135,13 @@ namespace WAWP.Pages
             ((this.Resources["MessagesPresenter"] as MessageContentPresenter).Content as MessageCollection).Remove(
                 ((sender as MenuItem).Parent as ContextMenu).DataContext as Message
             );
+        }
+
+        private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            messageBox.Width = this.ActualWidth / 2 - 50;
+            msgBox_ExpandAnim.To = this.ActualWidth;
+            msgBox_RestoreAnim.To = this.ActualWidth / 2 - 50;
         }
     }
 }
