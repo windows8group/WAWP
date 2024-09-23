@@ -154,8 +154,11 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
+            <!-- Message box.
+            You will see it being "broken" in designer, that's because of not having its width set.
+            That's done in ChatPage.xaml.cs. -->
             <toolkit:PhoneTextBox
-                    Hint="Send something..." Grid.Row="0" Background="White" BorderThickness="0"
+                    Grid.Row="0" Background="White" BorderThickness="0"
                     GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" x:Name="messageBox"
                     TextChanged="messageBox_TextChanged" HorizontalAlignment="Right">
                 <toolkit:PhoneTextBox.Resources>
