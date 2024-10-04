@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -117,140 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="About" xml:space="preserve">
-    <value>about</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="About_Des" xml:space="preserve">
-    <value>meet the team</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Account" xml:space="preserve">
-    <value>account</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Chat_Settings" xml:space="preserve">
-    <value>chat settings</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Connectivity" xml:space="preserve">
-    <value>connectivity</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Contacts" xml:space="preserve">
-    <value>contacts</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Lock_Screen" xml:space="preserve">
-    <value>lock screen</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Notif_Sounds" xml:space="preserve">
-    <value>notification sounds</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Profile" xml:space="preserve">
-    <value>profile</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Rotation" xml:space="preserve">
-    <value>rotation</value>
-    <comment>Used in Settings</comment>
-  </data>
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
     <value>en-US</value>
+    <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
   </data>
-  <data name="Account_Des" xml:space="preserve">
-    <value>privacy, delete account</value>
-    <comment>Used in Settings</comment>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>MY APPLICATION</value>
   </data>
-  <data name="Chat_Settings_Des" xml:space="preserve">
-    <value>auto-download, wallpaper, backup and more</value>
-    <comment>Used in Settings</comment>
+  <data name="SampleProperty" xml:space="preserve">
+    <value>Sample Runtime Property Value</value>
   </data>
-  <data name="Connectivity_Des" xml:space="preserve">
-    <value>change connectivity type</value>
-    <comment>Used in Settings</comment>
+  <data name="AppBarButtonText" xml:space="preserve">
+    <value>add</value>
   </data>
-  <data name="Contacts_Des" xml:space="preserve">
-    <value>invite a friend, block someone</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Lock_Screen_Des" xml:space="preserve">
-    <value>add WAWP to your lock screen</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Notif_Sounds_Des" xml:space="preserve">
-    <value>change notification sounds</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Profile_Des" xml:space="preserve">
-    <value>name, set an avatar, status</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Rotation_Des" xml:space="preserve">
-    <value>auto-rotate or block rotation</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Copy" xml:space="preserve">
-    <value>Copy</value>
-    <comment>Used in menus</comment>
-  </data>
-  <data name="Delete" xml:space="preserve">
-    <value>Delete</value>
-    <comment>Used in menus</comment>
-  </data>
-  <data name="Settings" xml:space="preserve">
-    <value>settings</value>
-  </data>
-  <data name="Share" xml:space="preserve">
-    <value>Share</value>
-    <comment>Used in menus</comment>
-  </data>
-  <data name="Background" xml:space="preserve">
-    <value>background</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Background_Des" xml:space="preserve">
-    <value>set a background image for all chats</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Backup" xml:space="preserve">
-    <value>backup</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Backup_Des" xml:space="preserve">
-    <value>last backup</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="ChatSettings" xml:space="preserve">
-    <value>Chat settings</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="Enter" xml:space="preserve">
-    <value>Enter sends a message</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="MediaAuto" xml:space="preserve">
-    <value>media autodownload</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="MediaAuto_Des" xml:space="preserve">
-    <value>set when to download data</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="ShowMessage" xml:space="preserve">
-    <value>Show message in Notification</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="TextSize" xml:space="preserve">
-    <value>text size</value>
-    <comment>Used in Settings</comment>
-  </data>
-  <data name="TextSize_Des" xml:space="preserve">
-    <value>set text size in messages</value>
+  <data name="AppBarMenuItemText" xml:space="preserve">
+    <value>Menu Item</value>
   </data>
 </root>
