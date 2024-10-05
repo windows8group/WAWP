@@ -210,4 +210,47 @@
     <value>Share</value>
     <comment>Used in menus</comment>
   </data>
+  <data name="Background" xml:space="preserve">
+    <value>background</value>
+    <comment>Used in Settings</comment>
+  </data>
+  <data name="Background_Des" xml:space="preserve">
+    <value>set a background image for all chats</value>
+    <comment>Used in Settings</comment>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>backup</value>
+    <comment>Used in Settings</comment>
+  </data>
+  <data name="Backup_Des" xml:space="preserve">
+    <value>last backup</value>
+    <comment>Used in Settings</comment>
+  </data>
+  <data name="ChatSettings" xml:space="preserve">
+    <value>Chat settings</value>
+    <comment>Used in Settings</comment>
+  </data>
+  <data name="Enter" xml:space="preserve">
+    <value>Enter sends a message</value>
+    <comment>Used in Settings</comment>
+  </data>
+  <data name="MediaAuto" xml:space="preserve">
+    <value>media autodownload</value>
+    <comment>Used in Settings</comment>
+  </data>
+  <data name="MediaAuto_Des" xml:space="preserve">
+    <value>set when to download data</value>
+    <comment>Used in Settings</comment>
+  </data>
+  <data name="ShowMessage" xml:space="preserve">
+    <value>Show message in Notification</value>
+    <comment>Used in Settings</comment>
+  </data>
+  <data name="TextSize" xml:space="preserve">
+    <value>text size</value>
+    <comment>Used in Settings</comment>
+  </data>
+  <data name="TextSize_Des" xml:space="preserve">
+    <value>set text size in messages</value>
+  </data>
 </root>

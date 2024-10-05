@@ -97,6 +97,42 @@ namespace WAWP.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to background.
+        /// </summary>
+        public static string Background {
+            get {
+                return ResourceManager.GetString("Background", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to set a background image for all chats.
+        /// </summary>
+        public static string Background_Des {
+            get {
+                return ResourceManager.GetString("Background_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to backup.
+        /// </summary>
+        public static string Backup {
+            get {
+                return ResourceManager.GetString("Backup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to last backup.
+        /// </summary>
+        public static string Backup_Des {
+            get {
+                return ResourceManager.GetString("Backup_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to chat settings.
         /// </summary>
         public static string Chat_Settings {
@@ -111,6 +147,15 @@ namespace WAWP.Resources {
         public static string Chat_Settings_Des {
             get {
                 return ResourceManager.GetString("Chat_Settings_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chat settings.
+        /// </summary>
+        public static string ChatSettings {
+            get {
+                return ResourceManager.GetString("ChatSettings", resourceCulture);
             }
         }
         
@@ -169,6 +214,15 @@ namespace WAWP.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter sends a message.
+        /// </summary>
+        public static string Enter {
+            get {
+                return ResourceManager.GetString("Enter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to lock screen.
         /// </summary>
         public static string Lock_Screen {
@@ -183,6 +237,24 @@ namespace WAWP.Resources {
         public static string Lock_Screen_Des {
             get {
                 return ResourceManager.GetString("Lock_Screen_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to media autodownload.
+        /// </summary>
+        public static string MediaAuto {
+            get {
+                return ResourceManager.GetString("MediaAuto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to set when to download data.
+        /// </summary>
+        public static string MediaAuto_Des {
+            get {
+                return ResourceManager.GetString("MediaAuto_Des", resourceCulture);
             }
         }
         
@@ -273,6 +345,33 @@ namespace WAWP.Resources {
         public static string Share {
             get {
                 return ResourceManager.GetString("Share", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show message in Notification.
+        /// </summary>
+        public static string ShowMessage {
+            get {
+                return ResourceManager.GetString("ShowMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to text size.
+        /// </summary>
+        public static string TextSize {
+            get {
+                return ResourceManager.GetString("TextSize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to set text size in messages.
+        /// </summary>
+        public static string TextSize_Des {
+            get {
+                return ResourceManager.GetString("TextSize_Des", resourceCulture);
             }
         }
     }
