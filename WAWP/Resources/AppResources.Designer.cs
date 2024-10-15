@@ -97,6 +97,42 @@ namespace WAWP.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to all.
+        /// </summary>
+        public static string AllListName {
+            get {
+                return ResourceManager.GetString("AllListName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The app could not exist without wonderful contributors:.
+        /// </summary>
+        public static string AppExistence {
+            get {
+                return ResourceManager.GetString("AppExistence", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to archived chats.
+        /// </summary>
+        public static string ArchiveMenuItem {
+            get {
+                return ResourceManager.GetString("ArchiveMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to attach.
+        /// </summary>
+        public static string AttachMenuItem {
+            get {
+                return ResourceManager.GetString("AttachMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to background.
         /// </summary>
         public static string Background {
@@ -133,6 +169,51 @@ namespace WAWP.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to blocked contacts.
+        /// </summary>
+        public static string blockBtn {
+            get {
+                return ResourceManager.GetString("blockBtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to broadcasts lists.
+        /// </summary>
+        public static string BroadcastsMenuItem {
+            get {
+                return ResourceManager.GetString("BroadcastsMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to calls.
+        /// </summary>
+        public static string CallsListName {
+            get {
+                return ResourceManager.GetString("CallsListName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to change your name.
+        /// </summary>
+        public static string ChangeName {
+            get {
+                return ResourceManager.GetString("ChangeName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to change number.
+        /// </summary>
+        public static string ChangeNumberBtn {
+            get {
+                return ResourceManager.GetString("ChangeNumberBtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to chat settings.
         /// </summary>
         public static string Chat_Settings {
@@ -156,6 +237,24 @@ namespace WAWP.Resources {
         public static string ChatSettings {
             get {
                 return ResourceManager.GetString("ChatSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to chats.
+        /// </summary>
+        public static string ChatsListName {
+            get {
+                return ResourceManager.GetString("ChatsListName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Client app developer.
+        /// </summary>
+        public static string ClientDev {
+            get {
+                return ResourceManager.GetString("ClientDev", resourceCulture);
             }
         }
         
@@ -205,6 +304,15 @@ namespace WAWP.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to custom.
+        /// </summary>
+        public static string CustomTab {
+            get {
+                return ResourceManager.GetString("CustomTab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Delete.
         /// </summary>
         public static string Delete {
@@ -214,11 +322,83 @@ namespace WAWP.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to delete account.
+        /// </summary>
+        public static string DeleteAccountBtn {
+            get {
+                return ResourceManager.GetString("DeleteAccountBtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to emoji.
+        /// </summary>
+        public static string EmojiMenuItem {
+            get {
+                return ResourceManager.GetString("EmojiMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enter sends a message.
         /// </summary>
         public static string Enter {
             get {
                 return ResourceManager.GetString("Enter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to favorites.
+        /// </summary>
+        public static string FavoritesListName {
+            get {
+                return ResourceManager.GetString("FavoritesListName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to info not found.
+        /// </summary>
+        public static string idk {
+            get {
+                return ResourceManager.GetString("idk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in-app settings.
+        /// </summary>
+        public static string inapp {
+            get {
+                return ResourceManager.GetString("inapp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in-app notification sounds.
+        /// </summary>
+        public static string inappSounds {
+            get {
+                return ResourceManager.GetString("inappSounds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in-app notification vibration.
+        /// </summary>
+        public static string inappVibrate {
+            get {
+                return ResourceManager.GetString("inappVibrate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to invite friends.
+        /// </summary>
+        public static string inviteBtn {
+            get {
+                return ResourceManager.GetString("inviteBtn", resourceCulture);
             }
         }
         
@@ -241,6 +421,15 @@ namespace WAWP.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Project manager.
+        /// </summary>
+        public static string Manager {
+            get {
+                return ResourceManager.GetString("Manager", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to media autodownload.
         /// </summary>
         public static string MediaAuto {
@@ -259,7 +448,34 @@ namespace WAWP.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to notification sounds.
+        ///   Looks up a localized string similar to send something....
+        /// </summary>
+        public static string messageBox {
+            get {
+                return ResourceManager.GetString("messageBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to new chat.
+        /// </summary>
+        public static string NewChatAppBar {
+            get {
+                return ResourceManager.GetString("NewChatAppBar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to new group.
+        /// </summary>
+        public static string NewGroupAppBar {
+            get {
+                return ResourceManager.GetString("NewGroupAppBar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to notifications.
         /// </summary>
         public static string Notif_Sounds {
             get {
@@ -268,11 +484,83 @@ namespace WAWP.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to change notification sounds.
+        ///   Looks up a localized string similar to change notification settings.
         /// </summary>
         public static string Notif_Sounds_Des {
             get {
                 return ResourceManager.GetString("Notif_Sounds_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to notify me about new calls.
+        /// </summary>
+        public static string NotifyCalls {
+            get {
+                return ResourceManager.GetString("NotifyCalls", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to notify me about new messages in group chats.
+        /// </summary>
+        public static string NotifyGroup {
+            get {
+                return ResourceManager.GetString("NotifyGroup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to notify me about new messages in private chats.
+        /// </summary>
+        public static string NotifyPrivate {
+            get {
+                return ResourceManager.GetString("NotifyPrivate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to not selectable.
+        /// </summary>
+        public static string notselectable {
+            get {
+                return ResourceManager.GetString("notselectable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to official.
+        /// </summary>
+        public static string OfficialTab {
+            get {
+                return ResourceManager.GetString("OfficialTab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to show a message in a pop-up.
+        /// </summary>
+        public static string popup {
+            get {
+                return ResourceManager.GetString("popup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to show a preview.
+        /// </summary>
+        public static string popupPreview {
+            get {
+                return ResourceManager.GetString("popupPreview", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to privacy.
+        /// </summary>
+        public static string PrivacyBtn {
+            get {
+                return ResourceManager.GetString("PrivacyBtn", resourceCulture);
             }
         }
         
@@ -291,6 +579,24 @@ namespace WAWP.Resources {
         public static string Profile_Des {
             get {
                 return ResourceManager.GetString("Profile_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to reset these settings.
+        /// </summary>
+        public static string resetBtn {
+            get {
+                return ResourceManager.GetString("resetBtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to resets everything here to defaults.
+        /// </summary>
+        public static string resetTxt {
+            get {
+                return ResourceManager.GetString("resetTxt", resourceCulture);
             }
         }
         
@@ -331,6 +637,78 @@ namespace WAWP.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sadly, there is nothing good for you to see right now, while that, use a button that says map:.
+        /// </summary>
+        public static string sad {
+            get {
+                return ResourceManager.GetString("sad", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to search.
+        /// </summary>
+        public static string SearchAppBar {
+            get {
+                return ResourceManager.GetString("SearchAppBar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select a ringtone.
+        /// </summary>
+        public static string SelectCall {
+            get {
+                return ResourceManager.GetString("SelectCall", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select a sound.
+        /// </summary>
+        public static string SelectSound {
+            get {
+                return ResourceManager.GetString("SelectSound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to send.
+        /// </summary>
+        public static string SendMenuItem {
+            get {
+                return ResourceManager.GetString("SendMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to current server.
+        /// </summary>
+        public static string server {
+            get {
+                return ResourceManager.GetString("server", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to enter your server.
+        /// </summary>
+        public static string ServerAddress {
+            get {
+                return ResourceManager.GetString("ServerAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WAWP server developer.
+        /// </summary>
+        public static string ServerDev {
+            get {
+                return ResourceManager.GetString("ServerDev", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to settings.
         /// </summary>
         public static string Settings {
@@ -354,6 +732,24 @@ namespace WAWP.Resources {
         public static string ShowMessage {
             get {
                 return ResourceManager.GetString("ShowMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to status.
+        /// </summary>
+        public static string StatusHeader {
+            get {
+                return ResourceManager.GetString("StatusHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to what&apos;s your status today?.
+        /// </summary>
+        public static string StatusHint {
+            get {
+                return ResourceManager.GetString("StatusHint", resourceCulture);
             }
         }
         

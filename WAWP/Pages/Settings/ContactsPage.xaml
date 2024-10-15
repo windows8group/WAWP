@@ -45,12 +45,26 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="WAWP" Style="{StaticResource PhoneTextNormalStyle}" FontFamily="Segoe WP Semibold" FontSize="22.667"/>
-            <TextBlock Text="contacts" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48"/>
+            <TextBlock x:Name="header" Text="contacts" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="Not Implemented yet" VerticalAlignment="Top"/>
+            <StackPanel>
+                <Button HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Margin="0" Padding="0">
+                    <Button.Content>
+                        <TextBlock x:Name="inviteBtn" Text="invite friends to WhatsApp" Style="{StaticResource PhoneTextTitle2Style}" Margin="0" />
+                    </Button.Content>
+                </Button>
+                <Button HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Margin="0,24" Padding="0">
+                    <Button.Content>
+                        <StackPanel>
+                            <TextBlock x:Name="BlockedListLink" Text="blocked contacts" Style="{StaticResource PhoneTextTitle2Style}" Margin="0" />
+                            <TextBlock x:Name="BlockedListCount" Text="pls change this string with a number" Style="{StaticResource PhoneTextSubtleStyle}" Margin="0" />
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+            </StackPanel>
 
         </Grid>
     </Grid>

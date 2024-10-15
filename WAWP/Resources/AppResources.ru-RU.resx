@@ -118,307 +118,305 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="About" xml:space="preserve">
-    <value>about</value>
+    <value>о клиенте</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="About_Des" xml:space="preserve">
-    <value>meet the team</value>
+    <value>посмотреть авторов</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Account" xml:space="preserve">
-    <value>account</value>
+    <value>аккаунт</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Chat_Settings" xml:space="preserve">
-    <value>chat settings</value>
+    <value>настройки чатов</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Connectivity" xml:space="preserve">
-    <value>connectivity</value>
+    <value>подключение</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Contacts" xml:space="preserve">
-    <value>contacts</value>
+    <value>контакты</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Lock_Screen" xml:space="preserve">
-    <value>lock screen</value>
+    <value>экран блокировки</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Notif_Sounds" xml:space="preserve">
-    <value>notifications</value>
+    <value>уведомления</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Profile" xml:space="preserve">
-    <value>profile</value>
+    <value>профиль</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Rotation" xml:space="preserve">
-    <value>rotation</value>
+    <value>поворот</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>en-US</value>
+    <value>ru-RU</value>
   </data>
   <data name="Account_Des" xml:space="preserve">
-    <value>privacy, delete account</value>
+    <value>конфиденциальность, удалить аккаунт</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Chat_Settings_Des" xml:space="preserve">
-    <value>auto-download, wallpaper, backup and more</value>
+    <value>автозагрузка, обои и так далее</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Connectivity_Des" xml:space="preserve">
-    <value>change connectivity type</value>
+    <value>изменить способ подключения</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Contacts_Des" xml:space="preserve">
-    <value>invite a friend, block someone</value>
+    <value>пригласить друга, забанить кого-то</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Lock_Screen_Des" xml:space="preserve">
-    <value>add WAWP to your lock screen</value>
+    <value>добавить WAWP на экран блокировки</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Notif_Sounds_Des" xml:space="preserve">
-    <value>change notification settings</value>
+    <value>изменить настройки уведомлений</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Profile_Des" xml:space="preserve">
-    <value>name, set an avatar, status</value>
+    <value>имя, изменить аватар, статус</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Rotation_Des" xml:space="preserve">
-    <value>auto-rotate or block rotation</value>
+    <value>автоповорот или его блокировка</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Copy" xml:space="preserve">
-    <value>Copy</value>
+    <value>Копировать</value>
     <comment>Used in menus</comment>
   </data>
   <data name="Delete" xml:space="preserve">
-    <value>Delete</value>
+    <value>Удалить</value>
     <comment>Used in menus</comment>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>settings</value>
+    <value>параметры</value>
   </data>
   <data name="Share" xml:space="preserve">
-    <value>Share</value>
+    <value>Поделиться</value>
     <comment>Used in menus</comment>
   </data>
   <data name="Background" xml:space="preserve">
-    <value>background</value>
+    <value>обои</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Background_Des" xml:space="preserve">
-    <value>set a background image for all chats</value>
+    <value>установить обои для всех чатов</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Backup" xml:space="preserve">
-    <value>backup</value>
+    <value>резервная копия</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Backup_Des" xml:space="preserve">
-    <value>last backup</value>
+    <value>последнее копирование</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="ChatSettings" xml:space="preserve">
-    <value>Chat settings</value>
+    <value>Параметры чата</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="Enter" xml:space="preserve">
-    <value>Enter sends a message</value>
+    <value>Enter отправляет сообщение</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="MediaAuto" xml:space="preserve">
-    <value>media autodownload</value>
+    <value>автозагрузка медиа</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="MediaAuto_Des" xml:space="preserve">
-    <value>set when to download data</value>
+    <value>настроить загрузку данных</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="ShowMessage" xml:space="preserve">
-    <value>Show message in Notification</value>
+    <value>Показать сообщение в Уведомлении</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="TextSize" xml:space="preserve">
-    <value>text size</value>
+    <value>размер текста</value>
     <comment>Used in Settings</comment>
   </data>
   <data name="TextSize_Des" xml:space="preserve">
-    <value>set text size in messages</value>
+    <value>изменить размер текста в чатах</value>
   </data>
   <data name="CustomTab" xml:space="preserve">
-    <value>custom</value>
-    <comment>used in connectivity page</comment>
+    <value>свои</value>
+    <comment>Used in connectivity page</comment>
   </data>
   <data name="OfficialTab" xml:space="preserve">
-    <value>official</value>
-    <comment>used in connectivity page</comment>
+    <value>официальные</value>
+    <comment>Used in connectivity page</comment>
   </data>
-  <data name="AllListName" xml:space="preserve">
-    <value>all</value>
-    <comment>used in a main page</comment>
-  </data>
-  <data name="AppExistence" xml:space="preserve">
-    <value>The app could not exist without wonderful contributors:</value>
-  </data>
-  <data name="ArchiveMenuItem" xml:space="preserve">
-    <value>archived chats</value>
-    <comment>used in a main page</comment>
+  <data name="ServerAddress" xml:space="preserve">
+    <value>введите свой сервер</value>
+    <comment>Used in connectivity page</comment>
   </data>
   <data name="AttachMenuItem" xml:space="preserve">
-    <value>attach</value>
-    <comment>used in chat page (not now)</comment>
+    <value>файл</value>
+    <comment>used in chat page</comment>
   </data>
-  <data name="blockBtn" xml:space="preserve">
-    <value>blocked contacts</value>
-    <comment>used in contacts page</comment>
+  <data name="EmojiMenuItem" xml:space="preserve">
+    <value>эмодзи</value>
+    <comment>used in chat page</comment>
+  </data>
+  <data name="messageBox" xml:space="preserve">
+    <value>отправить что-то...</value>
+    <comment>used in chat page</comment>
+  </data>
+  <data name="SendMenuItem" xml:space="preserve">
+    <value>отправить</value>
+    <comment>used in chat page</comment>
+  </data>
+  <data name="server" xml:space="preserve">
+    <value>текущий сервер</value>
+    <comment>Used in connectivity page</comment>
+  </data>
+  <data name="AllListName" xml:space="preserve">
+    <value>все</value>
+    <comment>used in a main page</comment>
+  </data>
+  <data name="ArchiveMenuItem" xml:space="preserve">
+    <value>зархивированные чаты</value>
+    <comment>used in a main page</comment>
   </data>
   <data name="BroadcastsMenuItem" xml:space="preserve">
-    <value>broadcasts lists</value>
+    <value>списки рассылки</value>
     <comment>used in a main page</comment>
   </data>
   <data name="CallsListName" xml:space="preserve">
-    <value>calls</value>
+    <value>звонки</value>
     <comment>used in a main page</comment>
   </data>
+  <data name="ChatsListName" xml:space="preserve">
+    <value>чаты</value>
+    <comment>used in a main page</comment>
+  </data>
+  <data name="FavoritesListName" xml:space="preserve">
+    <value>избранное</value>
+    <comment>used in a main page</comment>
+  </data>
+  <data name="NewChatAppBar" xml:space="preserve">
+    <value>новый чат</value>
+    <comment>used in a main page</comment>
+  </data>
+  <data name="NewGroupAppBar" xml:space="preserve">
+    <value>новая группа</value>
+    <comment>used in a main page</comment>
+  </data>
+  <data name="SearchAppBar" xml:space="preserve">
+    <value>поиск</value>
+    <comment>used in a main page</comment>
+  </data>
+  <data name="AppExistence" xml:space="preserve">
+    <value>Приложение не могло бы существовать без этих потрясающих людей:</value>
+  </data>
+  <data name="blockBtn" xml:space="preserve">
+    <value>заблокированные контакты</value>
+  </data>
   <data name="ChangeName" xml:space="preserve">
-    <value>change your name</value>
+    <value>изменить имя</value>
     <comment>used in profile page</comment>
   </data>
   <data name="ChangeNumberBtn" xml:space="preserve">
-    <value>change number</value>
-    <comment>used in account page</comment>
-  </data>
-  <data name="ChatsListName" xml:space="preserve">
-    <value>chats</value>
-    <comment>used in a main page</comment>
+    <value>изменить номер телефона</value>
   </data>
   <data name="ClientDev" xml:space="preserve">
-    <value>Client app developer</value>
+    <value>Разработчик клиента</value>
   </data>
   <data name="DeleteAccountBtn" xml:space="preserve">
-    <value>delete account</value>
-    <comment>used in account page</comment>
-  </data>
-  <data name="EmojiMenuItem" xml:space="preserve">
-    <value>emoji</value>
-    <comment>used in chat page (not now)</comment>
-  </data>
-  <data name="FavoritesListName" xml:space="preserve">
-    <value>favorites</value>
-    <comment>used in a main page</comment>
+    <value>удалить аккаунт</value>
   </data>
   <data name="idk" xml:space="preserve">
-    <value>info not found</value>
+    <value>инфа не найдена</value>
     <comment>used in notifications page</comment>
   </data>
   <data name="inapp" xml:space="preserve">
-    <value>in-app settings</value>
+    <value>настройки в клиенте</value>
     <comment>used in notifications page</comment>
   </data>
   <data name="inappSounds" xml:space="preserve">
-    <value>in-app notification sounds</value>
+    <value>воспроизводить звуки в клиенте</value>
     <comment>used in notifications page</comment>
   </data>
   <data name="inappVibrate" xml:space="preserve">
-    <value>in-app notification vibration</value>
+    <value>вибрировать в клиенте</value>
     <comment>used in notifications page</comment>
   </data>
   <data name="inviteBtn" xml:space="preserve">
-    <value>invite friends</value>
-    <comment>used in contacts page</comment>
+    <value>пригласить друзей</value>
   </data>
   <data name="Manager" xml:space="preserve">
-    <value>Project manager</value>
-  </data>
-  <data name="messageBox" xml:space="preserve">
-    <value>send something...</value>
-    <comment>used in chat page</comment>
-  </data>
-  <data name="NewChatAppBar" xml:space="preserve">
-    <value>new chat</value>
-  </data>
-  <data name="NewGroupAppBar" xml:space="preserve">
-    <value>new group</value>
+    <value>Менеджер проекта</value>
   </data>
   <data name="NotifyCalls" xml:space="preserve">
-    <value>notify me about new calls</value>
+    <value>уведомлять меня о новых звонках</value>
     <comment>used in notifications page</comment>
   </data>
   <data name="NotifyGroup" xml:space="preserve">
-    <value>notify me about new messages in group chats</value>
+    <value>уведомлять меня о новых сообщениях в групповых чатах</value>
     <comment>used in notifications page</comment>
   </data>
   <data name="NotifyPrivate" xml:space="preserve">
-    <value>notify me about new messages in private chats</value>
+    <value>уведомлять меня о новых сообщениях в личных чатах</value>
     <comment>used in notifications page</comment>
   </data>
   <data name="notselectable" xml:space="preserve">
-    <value>not selectable</value>
+    <value>пока нельзя выбрать</value>
     <comment>used in notifications page as a placeholder</comment>
   </data>
   <data name="popup" xml:space="preserve">
-    <value>show a message in a pop-up</value>
+    <value>показывать сообщение в центе уведомлений</value>
     <comment>used in notifications page</comment>
   </data>
   <data name="popupPreview" xml:space="preserve">
-    <value>show a preview</value>
+    <value>предпросмотр</value>
     <comment>used in notifications page</comment>
   </data>
   <data name="PrivacyBtn" xml:space="preserve">
-    <value>privacy</value>
+    <value>конфиденциальность</value>
   </data>
   <data name="resetBtn" xml:space="preserve">
-    <value>reset these settings</value>
+    <value>сброс настроек выше</value>
     <comment>used in notifications page</comment>
   </data>
   <data name="resetTxt" xml:space="preserve">
-    <value>resets everything here to defaults</value>
+    <value>сбрасывает все настройки до стандартных</value>
     <comment>used in notifications page</comment>
   </data>
   <data name="sad" xml:space="preserve">
-    <value>Sadly, there is nothing good for you to see right now, while that, use a button that says map:</value>
-    <comment>should be deprecated</comment>
-  </data>
-  <data name="SearchAppBar" xml:space="preserve">
-    <value>search</value>
+    <value>К сожалению ничего здесь нет. Вы можете нажать на кнопку с названием map:</value>
   </data>
   <data name="SelectCall" xml:space="preserve">
-    <value>select a ringtone</value>
+    <value>выбрать рингтон</value>
     <comment>used in notifications page</comment>
   </data>
   <data name="SelectSound" xml:space="preserve">
-    <value>select a sound</value>
+    <value>выбрать звук</value>
     <comment>used in notifications page</comment>
   </data>
-  <data name="SendMenuItem" xml:space="preserve">
-    <value>send</value>
-    <comment>used in chat page (not now)</comment>
-  </data>
-  <data name="server" xml:space="preserve">
-    <value>current server</value>
-    <comment>used in connectivity page</comment>
-  </data>
-  <data name="ServerAddress" xml:space="preserve">
-    <value>enter your server</value>
-    <comment>used in connectivity page</comment>
-  </data>
   <data name="ServerDev" xml:space="preserve">
-    <value>WAWP server developer</value>
+    <value>Разработчик сервера WAWP</value>
   </data>
   <data name="StatusHeader" xml:space="preserve">
-    <value>status</value>
+    <value>статус</value>
     <comment>used in profile page</comment>
   </data>
   <data name="StatusHint" xml:space="preserve">
-    <value>what's your status today?</value>
+    <value>какой у вас статус сегодня?</value>
     <comment>used in profile page</comment>
   </data>
 </root>

@@ -45,12 +45,12 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="WAWP" Style="{StaticResource PhoneTextNormalStyle}" FontFamily="Segoe WP Semibold" FontSize="22.667"/>
-            <TextBlock Text="broadcast lists" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48"/>
+            <TextBlock x:Name="header" Text="broadcast lists" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock HorizontalAlignment="Left" Margin="23,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top">
+            <TextBlock x:Name="sad" HorizontalAlignment="Left" Margin="23,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top">
             	<Run Text="Sadly, there is nothing good for you to see right now, while that, use a button that says map:" />
             </TextBlock>
             <Button Content="Map" HorizontalAlignment="Left" Margin="177,316,0,0" VerticalAlignment="Top" Click="Button_Click"/>

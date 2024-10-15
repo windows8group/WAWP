@@ -47,7 +47,7 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="WAWP" Style="{StaticResource PhoneTextNormalStyle}" FontFamily="Segoe WP Semibold" FontSize="22.667"/>
-            <TextBlock Text="profile" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48"/>
+            <TextBlock x:Name="header" Text="profile" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -88,8 +88,8 @@
             </Grid>
             
             <StackPanel Height="470" VerticalAlignment="Top" Margin="0,165,0,0">
-                <TextBlock Text="status" HorizontalAlignment="Left" Margin="15,0,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="32"/>
-                <toolkit:PhoneTextBox Hint="What's your status today?"/>
+                <TextBlock x:Name="StatusHead" Text="status" HorizontalAlignment="Left" Margin="15,0,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="32"/>
+                <toolkit:PhoneTextBox x:Name="StatusHint" Hint="What's your status today?"/>
             </StackPanel>
         </Grid>
     </Grid>

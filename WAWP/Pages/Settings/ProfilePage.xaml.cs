@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using WAWP.Resources;
 
 namespace WAWP.Pages.Settings
 {
@@ -15,6 +16,10 @@ namespace WAWP.Pages.Settings
         public ProfilePage()
         {
             InitializeComponent();
+            header.Text = AppResources.Profile;
+            ChangeName.Content = AppResources.ChangeName;
+            StatusHead.Text = AppResources.StatusHeader;
+            StatusHint.Hint = AppResources.StatusHint;
         }
 
         private void ChangeName_Click(object sender, RoutedEventArgs e)

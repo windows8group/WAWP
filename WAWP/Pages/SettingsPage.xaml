@@ -51,7 +51,7 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <phone:LongListSelector x:Name="SettingsList" SelectionChanged="SettingsList_SelectionChanged" Height="auto" Width="auto">
+            <phone:LongListSelector toolkit:TiltEffect.IsTiltEnabled="True" x:Name="SettingsList" SelectionChanged="SettingsList_SelectionChanged" Height="auto" Width="auto">
                 <phone:LongListSelector.ItemTemplate>
                     <DataTemplate>
                         <Grid Margin="0">

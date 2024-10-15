@@ -15,8 +15,7 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    shell:SystemTray.IsVisible="True"
-    Loaded="PhoneApplicationPage_Loaded">
+    shell:SystemTray.IsVisible="True">
 
     <phone:PhoneApplicationPage.Resources>
 
@@ -98,12 +97,11 @@
 
                                             <Rectangle Fill="{StaticResource PhoneAccentBrush}" Grid.RowSpan="2"/>
                                             
-                                            <TextBlock Text="{Binding Path=Text}" Grid.Row="0" TextWrapping="Wrap"
-                                                       Margin="7,0,0,0"/>
+                                            <TextBlock Text="{Binding Path=Text}" Grid.Row="0" TextWrapping="Wrap"/>
 
                                             <TextBlock Text="{Binding Path=TimeStamp}" Grid.Row="1"
                                                        Foreground="{StaticResource PhoneSubtleBrush}"
-                                                       HorizontalAlignment="Right" Margin="0,0,7,0"/>
+                                                       HorizontalAlignment="Right"/>
 
                                             <Path Data="m 0,0 l 16,0 l 0,16 l -16,-16"
                                                   Fill="{StaticResource PhoneAccentBrush}"
@@ -124,11 +122,11 @@
                                             </Grid.RowDefinitions>
 
                                             <Rectangle Fill="{StaticResource PhoneAccentBrush}" Grid.RowSpan="2"/>
-                                            <TextBlock Text="{Binding Path=Text}" Grid.Row="0" TextWrapping="Wrap" Margin="7,0,0,0"/>
+                                            <TextBlock Text="{Binding Path=Text}" Grid.Row="0" TextWrapping="Wrap"/>
 
                                             <TextBlock Text="{Binding Path=TimeStamp}" Grid.Row="1"
                                                        Foreground="{StaticResource PhoneSubtleBrush}"
-                                                       HorizontalAlignment="Right" Margin="0,0,7,0"/>
+                                                       HorizontalAlignment="Right"/>
 
                                             <Path Data="M 0,0 L 0,16 L 16,0 Z" Fill="{StaticResource PhoneAccentBrush}"
                                                   Margin="14.956,26.681,0,-27.834" HorizontalAlignment="Left" Grid.Row="1" UseLayoutRounding="False" Grid.RowSpan="2"/>
@@ -154,43 +152,16 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <!-- Message box.
-            You will see it being "broken" in designer, that's because of not having its width set.
-            That's done in ChatPage.xaml.cs. -->
             <toolkit:PhoneTextBox
-                    Grid.Row="0" Background="White" BorderThickness="0"
-                    GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" x:Name="messageBox"
-                    TextChanged="messageBox_TextChanged" HorizontalAlignment="Right">
-                <toolkit:PhoneTextBox.Resources>
-                    <Storyboard x:Name="messageBoxExpandAnim">
-                        <DoubleAnimation Storyboard.TargetName="messageBox" Storyboard.TargetProperty="(Width)"
-                                         Duration="00:00:00.3" x:Name="msgBox_ExpandAnim"/>
-                    </Storyboard>
-
-                    <Storyboard x:Name="messageBoxRestoreAnim">
-                        <DoubleAnimation Storyboard.TargetName="messageBox" Storyboard.TargetProperty="(Width)"
-                                         Duration="00:00:00.3" x:Name="msgBox_RestoreAnim"/>
-                    </Storyboard>
-                </toolkit:PhoneTextBox.Resources>
-            </toolkit:PhoneTextBox>
-
+                    Hint="Send something..." Grid.Row="0" Background="White" BorderThickness="0"
+                     GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" x:Name="messageBox"
+                     TextChanged="messageBox_TextChanged"/>
+            
             <Path Data="m 0,0 l 16,0 l 0,16 l -16,-16"
                   Fill="White"
                   HorizontalAlignment="Right" VerticalAlignment="Top"
                   UseLayoutRounding="False" Grid.RowSpan="3" Margin="0,53.579,22.972,0"/>
         </Grid>
     </Grid>
-
-    <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar>
-            <!-- I tried to make the send button disabled when there's nothing in the text box,
-                 but got NullReferenceError on textbox edit. That sucks. -->
-            <shell:ApplicationBarIconButton
-                x:Name="SendMenuItem" Text="send" Click="SendMenuItem_Click"
-                IconUri="/Assets/AppBar/send.png"/>
-            <shell:ApplicationBarIconButton Text="attach" IconUri="/Assets/AppBar/attach.png"/>
-            <shell:ApplicationBarIconButton Text="emoji" IconUri="/Assets/AppBar/emoji.png"/>
-        </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>
-    
+    <!-- ApplicationBar moved to ChatPage.xaml.cs (comment is saved) -->
 </phone:PhoneApplicationPage>

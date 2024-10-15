@@ -3,6 +3,8 @@
   <DefaultLanguage xmlns="" code="en-US" />
   <Languages xmlns="">
     <Language code="vi-VN" />
+    <Language code="ru" />
+    <Language code="ru-RU" />
   </Languages>
   <App xmlns="" ProductID="{3cf8fb08-cbeb-4c8a-b956-03963e81386b}" Title="WAWP" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="WAWP author" Description="Sample description" Publisher="WAWP" PublisherID="{f258e7e9-5355-4048-8e9c-557baf5ca2d8}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
@@ -27,7 +29,7 @@
           <BackBackgroundImageURI></BackBackgroundImageURI>
           <BackTitle></BackTitle>
           <DeviceLockImageURI></DeviceLockImageURI>
-          <HasLarge></HasLarge>
+          <HasLarge>False</HasLarge>
         </TemplateFlip>
       </PrimaryToken>
     </Tokens>

@@ -45,12 +45,74 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="WAWP" Style="{StaticResource PhoneTextNormalStyle}" FontFamily="Segoe WP Semibold" FontSize="22.667"/>
-            <TextBlock Text="notifications" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48"/>
+            <TextBlock x:Name="header" Text="notifications" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="Not Implemented yet" VerticalAlignment="Top"/>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+            <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Disabled">
+                <!-- Alan said content of scrollviewer appeared to be blurry
+                 if zoombox is placed outside of scrollviewer. -->
+                <StackPanel Margin="24,0,24,112">
+                    <!-- Individual chat notification section -->
+                    <StackPanel Margin="0,0,0,36">
+                        <TextBlock x:Name="NotifyPrivate" Text="notify me about new messages in private chats" TextWrapping="Wrap" FontFamily="{StaticResource PhoneFontFamilySemiBold}" FontSize="24" Margin="0" />
+                        <toolkit:ToggleSwitch Padding="0" Margin="-12,0,0,-12">
+                            <toolkit:ToggleSwitch.ContentTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding}" Margin="0,-6,0,10" VerticalAlignment="Top" />
+                                </DataTemplate>
+                            </toolkit:ToggleSwitch.ContentTemplate>
+                        </toolkit:ToggleSwitch>
+                        <TextBlock x:Name="select1" Text="select a sound" Style="{StaticResource PhoneTextSubtleStyle}" TextWrapping="Wrap" Margin="0,-12,0,0" />
+                        <Button x:Name="notsel" HorizontalContentAlignment="Left" Padding="12,6" Margin="-12,0,0,0" Content="not now clickable" IsEnabled="{Binding EnableMessageToneSelectButton}" AutomationProperties.AutomationId="AIdIndividualButton" />
+                    </StackPanel>
+                    <!-- Group notification section -->
+                    <StackPanel Margin="0,0,0,36">
+                        <TextBlock x:Name="NotifyGroup" Text="notify me about new messages in group chats" TextWrapping="Wrap" FontFamily="{StaticResource PhoneFontFamilySemiBold}" FontSize="24" Margin="0" />
+                        <toolkit:ToggleSwitch Padding="0" Margin="-12,0,0,-12">
+                            <toolkit:ToggleSwitch.ContentTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding}" Margin="0,-6,0,10" VerticalAlignment="Top" />
+                                </DataTemplate>
+                            </toolkit:ToggleSwitch.ContentTemplate>
+                        </toolkit:ToggleSwitch>
+                        <TextBlock x:Name="select2" Text="select a sound" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Margin="0,-12,0,0" />
+                        <Button x:Name="notsel1" HorizontalContentAlignment="Left" Padding="12,6" Margin="-12,0,0,0" Content="not yet ready" IsEnabled="{Binding EnableGroupToneSelectButton}" AutomationProperties.AutomationId="AIdGroupButton" />
+                    </StackPanel>
+                    <!-- Call notification section -->
+                    <StackPanel Margin="0,0,0,36">
+                        <TextBlock x:Name="NotifyCalls" Text="notify me about calls" TextWrapping="Wrap" FontFamily="{StaticResource PhoneFontFamilySemiBold}" FontSize="24" />
+                        <TextBlock x:Name="SelectCall" Text="select a call sound" Style="{StaticResource PhoneTextSubtleStyle}" Margin="0,12,0,0" />
+                        <Button x:Name="notsel2" HorizontalContentAlignment="Left" Padding="12,6" Margin="-12,0,0,0" Content="{Binding VoipRingtoneName}" AutomationProperties.AutomationId="AIdVoipButton" />
+                    </StackPanel>
+                    <!-- In-App notification section -->
+                    <StackPanel Margin="0,0,0,24">
+                        <TextBlock x:Name="inapp" Text="in-app settings" TextWrapping="Wrap" FontFamily="{StaticResource PhoneFontFamilySemiBold}" FontSize="24" />
+                        <toolkit:ToggleSwitch x:Name="idk" Header="honestly idk what is that" IsChecked="{Binding EnableInAppNotificationToast, Mode=TwoWay}" Padding="0" Margin="-12,12,0,-12">
+                            <toolkit:ToggleSwitch.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding}" TextWrapping="Wrap" />
+                                </DataTemplate>
+                            </toolkit:ToggleSwitch.HeaderTemplate>
+                        </toolkit:ToggleSwitch>
+                        <toolkit:ToggleSwitch x:Name="inappSounds" Header="enable in-app notification sounds" IsChecked="{Binding EnableInAppNotificationSound, Mode=TwoWay}" Padding="0" Margin="-12,0,0,-12" />
+                        <toolkit:ToggleSwitch x:Name="inappVibrate" Header="enable in-app notification vibration" IsChecked="{Binding EnableInAppNotificationVibrate, Mode=TwoWay}" Padding="0" Margin="-12,0,0,-12" />
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,24">
+                        <TextBlock x:Name="PopupPreview" Text="show a preview" TextWrapping="Wrap" FontFamily="{StaticResource PhoneFontFamilySemiBold}" FontSize="24" />
+                        <toolkit:ToggleSwitch x:Name="popup" Padding="0" Margin="-12,12,0,0" Header="show previews in pop-ups" IsChecked="{Binding ShowPreviewInNotifications, Mode=TwoWay}">
+                            <toolkit:ToggleSwitch.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding}" TextWrapping="Wrap" />
+                                </DataTemplate>
+                            </toolkit:ToggleSwitch.HeaderTemplate>
+                        </toolkit:ToggleSwitch>
+                    </StackPanel>
+                    <Button x:Name="resetBtn" Content="reset these settings" Padding="12,6" Margin="-12,0,0,0" HorizontalAlignment="Left" AutomationProperties.AutomationId="AIdReset" />
+                    <TextBlock x:Name="resetTxt" Text="resets everything here to defaults" TextWrapping="Wrap" Margin="0" />
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
     </Grid>
 

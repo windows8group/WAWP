@@ -14,19 +14,48 @@ namespace WAWP
 {
     public partial class MainPage : PhoneApplicationPage
     {
-        public int UnreadNumber
-        {
-            get
-            {
-                return Enumerable.Range(0, ChatsList.ItemsSource.Count)
-                                 .Where(i => (ChatsList.ItemsSource[i] as ChatItem).isRead == false)
-                                 .Count();
-            }
-        }
-
+        // Constructor
         public MainPage()
         {
             InitializeComponent();
+            ApplicationBar = new ApplicationBar();
+
+            ApplicationBar.Mode = ApplicationBarMode.Default;
+            ApplicationBar.Opacity = 1.0;
+            ApplicationBar.IsVisible = true;
+            ApplicationBar.IsMenuEnabled = true;
+
+            ApplicationBarIconButton SearchAppBar = new ApplicationBarIconButton();
+            SearchAppBar.IconUri = new Uri("/Assets/AppBar/feature.search.png", UriKind.Relative);
+            SearchAppBar.Text = AppResources.SearchAppBar;
+            ApplicationBar.Buttons.Add(SearchAppBar);
+            ApplicationBarIconButton NewChatAppBar = new ApplicationBarIconButton();
+            NewChatAppBar.IconUri = new Uri("/Assets/AppBar1/new.png", UriKind.Relative);
+            NewChatAppBar.Text = AppResources.NewChatAppBar;
+            ApplicationBar.Buttons.Add(NewChatAppBar);
+            ApplicationBarIconButton NewGroupAppBar = new ApplicationBarIconButton();
+            NewGroupAppBar.IconUri = new Uri("/Assets/AppBar2/newgroup.png", UriKind.Relative);
+            NewGroupAppBar.Text = AppResources.NewGroupAppBar;
+            ApplicationBar.Buttons.Add(NewGroupAppBar);
+
+            ApplicationBarMenuItem BroadcastsMenuItem = new ApplicationBarMenuItem();
+            BroadcastsMenuItem.Text = AppResources.BroadcastsMenuItem;
+            ApplicationBar.MenuItems.Add(BroadcastsMenuItem);
+            BroadcastsMenuItem.Click += new EventHandler(BroadcastsMenuItem_Click);
+            ApplicationBarMenuItem ArchiveMenuItem = new ApplicationBarMenuItem();
+            ArchiveMenuItem.Text = AppResources.ArchiveMenuItem;
+            ApplicationBar.MenuItems.Add(ArchiveMenuItem);
+            ArchiveMenuItem.Click += new EventHandler(ArchiveMenuItem_Click);
+            ApplicationBarMenuItem SettingsMenuItem = new ApplicationBarMenuItem();
+            SettingsMenuItem.Text = AppResources.Settings;
+            ApplicationBar.MenuItems.Add(SettingsMenuItem);
+            SettingsMenuItem.Click += new EventHandler(SettingsMenuItem_Click);
+
+            // localizing strings
+            ChatsListName.Header = AppResources.ChatsListName;
+            CallsListName.Header = AppResources.CallsListName;
+            FavoritesListName.Header = AppResources.FavoritesListName;
+            AllListName.Header = AppResources.AllListName;
         }
 
         // Load data for the ViewModel Items
@@ -36,8 +65,27 @@ namespace WAWP
             ChatsList.ItemsSource.Add(new ChatItem() { Name = "Kierownik223", ImageUri = "https://marmak.net.pl/images/Kierownik223.png", LastMessage = "UI Testing!", isRead = false });
             ChatsList.ItemsSource.Add(new ChatItem() { Name = "Olek47", ImageUri = "https://marmak.net.pl/images/Olek47.png", LastMessage = "UI Testing 2!", isRead = true });
             ChatsList.ItemsSource.Add(new ChatItem() { Name = "Maksym", ImageUri = "https://marmak.net.pl/images/Maksym.png", LastMessage = "Siema", isRead = true });
-            UnreadCount.Text = UnreadNumber.ToString();
+
+            UnreadCount.Text = Enumerable.Range(0, ChatsList.ItemsSource.Count)
+                                    .Where(i => (ChatsList.ItemsSource[i] as ChatItem).isRead == false)
+                                    .Count().ToString();
         }
+
+        // Sample code for building a localized ApplicationBar
+        //private void BuildLocalizedApplicationBar()
+        //{
+        //    // Set the page's ApplicationBar to a new instance of ApplicationBar.
+        //    ApplicationBar = new ApplicationBar();
+
+        //    // Create a new button and set the text value to the localized string from AppResources.
+        //    ApplicationBarIconButton appBarButton = new ApplicationBarIconButton(new Uri("/Assets/AppBar/appbar.add.rest.png", UriKind.Relative));
+        //    appBarButton.Text = AppResources.AppBarButtonText;
+        //    ApplicationBar.Buttons.Add(appBarButton);
+
+        //    // Create a new menu item with the localized string from AppResources.
+        //    ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
+        //    ApplicationBar.MenuItems.Add(appBarMenuItem);
+        //}
 
         private void ArchiveMenuItem_Click(object sender, EventArgs e)
         {

@@ -9,7 +9,6 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using WAWP.Resources;
-using System.Windows.Media.Animation;
 
 namespace WAWP.Pages
 {
@@ -38,26 +37,58 @@ namespace WAWP.Pages
         public ChatPage()
         {
             InitializeComponent();
+
+            ApplicationBar = new ApplicationBar();
+
+            ApplicationBar.Mode = ApplicationBarMode.Default;
+            ApplicationBar.Opacity = 1.0;
+            ApplicationBar.IsVisible = true;
+            ApplicationBar.IsMenuEnabled = true;
+
+            /// I tried to make the send button disabled when there's nothing in the text box,
+            /// but got NullReferenceError on textbox edit. That sucks.
+            ///
+            /// Le Bao Nguyen.
+            ApplicationBarIconButton SendMenuItem = new ApplicationBarIconButton();
+            SendMenuItem.IconUri = new Uri("/Assets/AppBar/send.png", UriKind.Relative);
+            SendMenuItem.Text = AppResources.SendMenuItem;
+            SendMenuItem.IsEnabled = false;
+            ApplicationBar.Buttons.Add(SendMenuItem);
+            SendMenuItem.Click += new EventHandler(SendMenuItem_Click);
+            ApplicationBarIconButton AttachMenuItem = new ApplicationBarIconButton();
+            AttachMenuItem.IconUri = new Uri("/Assets/AppBar/attach.png", UriKind.Relative);
+            AttachMenuItem.Text = AppResources.AttachMenuItem;
+            ApplicationBar.Buttons.Add(AttachMenuItem);
+            ApplicationBarIconButton EmojiMenuItem = new ApplicationBarIconButton();
+            EmojiMenuItem.IconUri = new Uri("/Assets/AppBar/emoji.png", UriKind.Relative);
+            EmojiMenuItem.Text = AppResources.EmojiMenuItem;
+            ApplicationBar.Buttons.Add(EmojiMenuItem);
+
+
+            messageBox.Hint = AppResources.messageBox;
         }
 
         private void TextBox_GotFocus(object sender, RoutedEventArgs e)
         {
             PaddingRectangle.Visibility = Visibility.Visible;
             PaddingRectangleShowAnim.Begin();
-            messageBoxExpandAnim.Begin();
         }
 
         private void TextBox_LostFocus(object sender, RoutedEventArgs e)
         {
             PaddingRectangle.Visibility = Visibility.Collapsed;
             PaddingRectangleHideAnim.Begin();
-            messageBoxRestoreAnim.Begin();
         }
 
+        /// doesn't disable SendMenuBar after message was sent
+        /// 
+        /// PickaxeInABox
         private void SendMenuItem_Click(object sender, EventArgs e)
         {
             if (messageBox.Text != "")
             {
+                ApplicationBarIconButton btn = (ApplicationBarIconButton)ApplicationBar.Buttons[0];
+                btn.IsEnabled = false;
                 ((this.Resources["MessagesPresenter"] as MessageContentPresenter).Content as MessageCollection).Add(
                     new Message()
                     {
@@ -68,6 +99,7 @@ namespace WAWP.Pages
                 );
                 ConversationScrollViewer.Focus();
                 messageBox.Text = "";
+
             }
         }
 
@@ -81,15 +113,22 @@ namespace WAWP.Pages
             {
                 chatTitle.Text = userName;
             }
-
         }
-
+        /// doesn't turn off after messageBox is cleared by a backspaces
+        /// 
+        /// PickaxeInABox
         private void messageBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if ((SendMenuItem != null) && (SendMenuItem.IsEnabled == false))
+            ApplicationBarIconButton btn = (ApplicationBarIconButton)ApplicationBar.Buttons[0];
+            if (messageBox != null)
             {
-                SendMenuItem.IsEnabled = true;
-            }
+            btn.IsEnabled = true;
+            };
+            if ((messageBox == null) && (btn.IsEnabled == true))
+            {
+                btn.IsEnabled = false;
+            };
+            
         }
 
         private void Grid_Hold(object sender, System.Windows.Input.GestureEventArgs e)
@@ -135,13 +174,6 @@ namespace WAWP.Pages
             ((this.Resources["MessagesPresenter"] as MessageContentPresenter).Content as MessageCollection).Remove(
                 ((sender as MenuItem).Parent as ContextMenu).DataContext as Message
             );
-        }
-
-        private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
-        {
-            messageBox.Width = this.ActualWidth / 2 - 50;
-            msgBox_ExpandAnim.To = this.ActualWidth;
-            msgBox_RestoreAnim.To = this.ActualWidth / 2 - 50;
         }
     }
 }

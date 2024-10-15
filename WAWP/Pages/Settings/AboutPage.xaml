@@ -45,7 +45,7 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="WAWP" Style="{StaticResource PhoneTextNormalStyle}" FontFamily="Segoe WP Semibold" FontSize="22.667"/>
-            <TextBlock Margin="9,-7,-39,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48" Text="about"/>
+            <TextBlock x:Name="header" Margin="9,-7,-39,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48" Text="about"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -53,7 +53,7 @@
             <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="24">
                 <Bold>W</Bold>hats<Bold>A</Bold>pp on <Bold>W</Bold>indows <Bold>P</Bold>hone
             </TextBlock>
-            <TextBlock Text="The app could not exist without wonderful contributors:" Margin="0,10,0,0" FontSize="24" HorizontalAlignment="Center" TextWrapping="Wrap"/>
+            <TextBlock x:Name="AppExist" Text="The app could not exist without wonderful contributors:" Margin="0,10,0,0" FontSize="24" HorizontalAlignment="Center" TextWrapping="Wrap"/>
             <Grid Margin="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
@@ -62,7 +62,7 @@
                 <Image Grid.Column="0" Source="/Assets/Profiles/tim.jpg" Stretch="UniformToFill" Width="75" Height="75"/>
                 <StackPanel Grid.Column="1" Margin="10,0,0,0">
                     <TextBlock Text="tim" FontSize="36" TextDecorations="Underline" Foreground="{StaticResource PhoneAccentBrush}"/>
-                    <TextBlock Text="Project management"/>
+                    <TextBlock x:Name="manager" Text="Project management"/>
                 </StackPanel>
             </Grid>
             <Grid Margin="10">
@@ -73,7 +73,7 @@
                 <Image Grid.Column="0" Source="/Assets/Profiles/Kierownik223.png" Stretch="UniformToFill" Width="75" Height="75"/>
                 <StackPanel Grid.Column="1" Margin="10,0,0,0">
                     <TextBlock Text="Kierownik223" FontSize="36" Foreground="{StaticResource PhoneAccentBrush}" TextDecorations="Underline"/>
-                    <TextBlock Text="Client app developement"/>
+                    <TextBlock x:Name="ClientDev" Text="Client app developement"/>
                 </StackPanel>
             </Grid>
             <Grid Margin="10">
@@ -84,7 +84,7 @@
                 <Image Grid.Column="0" Source="/Assets/Profiles/PickaxeInABox.png" Stretch="UniformToFill" Width="75" Height="75"/>
                 <StackPanel Grid.Column="1" Margin="10,0,0,0">
                     <TextBlock Text="PickaxeInABox" FontSize="36" Foreground="{StaticResource PhoneAccentBrush}" TextDecorations="Underline"/>
-                    <TextBlock Text="Client app developement"/>
+                    <TextBlock x:Name="ClientDev1" Text="Client app developement"/>
                 </StackPanel>
             </Grid>
             <Grid Margin="10">
@@ -95,7 +95,7 @@
                 <Image Grid.Column="0" Source="/Assets/Profiles/Bebrito.png" Stretch="UniformToFill" Width="75" Height="75"/>
                 <StackPanel Grid.Column="1" Margin="10,0,0,0">
                     <TextBlock x:Name="Olek" Text="IarChep" FontSize="36" Foreground="{StaticResource PhoneAccentBrush}" TextDecorations="Underline"/>
-                    <TextBlock Text="WAWP server developer"/>
+                    <TextBlock x:Name="ServerDev" Text="WAWP server developer"/>
                 </StackPanel>
             </Grid>
         </StackPanel>

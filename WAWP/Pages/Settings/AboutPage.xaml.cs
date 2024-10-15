@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using WAWP.Resources;
 
 namespace WAWP.Pages
 {
@@ -15,6 +16,13 @@ namespace WAWP.Pages
         public AboutPage()
         {
             InitializeComponent();
+
+            AppExist.Text = AppResources.AppExistence;
+            manager.Text = AppResources.Manager;
+            ClientDev.Text = AppResources.ClientDev;
+            ClientDev1.Text = AppResources.ClientDev;
+            ServerDev.Text = AppResources.ServerDev;
+            header.Text = AppResources.About;
         }
     }
 }
